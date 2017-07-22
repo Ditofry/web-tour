@@ -1,13 +1,47 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html>
   <head>
     <title>My site's title (look at the tab in your browser)</title>
   </head>
   
   <body>
-    <h1>Hello, well-formed doc!</h1>
-    <div>There are other things that could be thrown in here that would 
-    give explicit information about one's website, such as the info about
-    what charset one is using, or that it's incompatible with old browsers</div>
+    <h1>Hello, world</h1>
+    <div class="info-block">
+      <p>The HTML now has a bunch of classes and id's.  Classes and id's are 
+      just strings, and pretty much any old string will do.  Classes can exist
+      in multiple places, ids exist in only one place.</p>  
+      
+      <p>Classes/IDs don't mean anything unless they're targeted by CSS, (makes things pretty),
+      or Javascript (makes the page do stuff).  We don't have Javascript or CSS
+      yet.  That's why this page looks like poo.</p>
+    </div>
+
+    <div id="my-tall-image-container"> 
+      <div class="a-tall-image">
+        <img src="./images/tall-img-1.jpg" />
+      </div>
+
+      <div class="a-tall-image">
+        <img src="./images/tall-img-2.jpg" />
+      </div>
+    </div>
+
+    <div id="my-lil-image-container">
+      <div class="an-image">
+        <img src="img-1.jpg" />
+      </div>
+
+      <div class="an-image">
+        <img src="images/img-2.jpg" />
+      </div>
+      
+      <div class="an-image">
+        <img src="./images/img-3.jpg" />
+      </div>
+
+      <div class="an-image">
+        <img src="./images/animated_gif.gif" />
+      </div>
+    </div>
   </body>
 </html>
