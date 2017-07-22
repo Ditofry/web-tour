@@ -1,9 +1,22 @@
 /* There could be many stylesheets in your project, 
 but usually there's a 'main.css' that combines them */
+/* Global styles for everything ever (unless it gets overridden) */
+* {
+  font-family: 'Josefin Sans', sans-serif;
+}
 
 /* styling all instances of a tag */
+body {
+  
+}
+
 h1 {
-  color: purple;
+  color: black;
+  text-align: center;
+}
+
+img {
+  width: 100%;
 }
 
 /* styling a class */
@@ -11,7 +24,6 @@ h1 {
   padding: 10px;
   margin: 10px;
   color: grey;
-  border: 1px solid black;
 }
 
 /* styling an id */
@@ -19,11 +31,27 @@ h1 {
   width: 100%;
   max-width: 1100px;
   min-width: 500px;
-  margin: 20px;
+  margin: 20px auto;
   padding: 20px;
 }
 
-/* styling all instances of a tag that are nested in a div with given id */
-#my-tall-image-container img {
-  border: 1px solid red; /* (this is a comment in CSS) this is how you target something within another div in raw CSS */
+.a-tall-image {
+  float: left;
+  width: 40%;
+  margin: 0 5%;
 }
+
+#my-lil-image-container {
+  width: 100%;
+  max-width: 1100px;
+  min-width: 500px;
+  margin: 20px auto;
+  padding: 20px;  
+}
+
+.an-image {
+  float: left;
+  width: 25%;
+  margin: 0 2%;
+}
+/* styling all instances of a tag that are nested in a div with given id */
