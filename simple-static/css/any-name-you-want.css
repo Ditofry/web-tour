@@ -1,0 +1,29 @@
+/* There could be many stylesheets in your project, 
+but usually there's a 'main.css' that combines them */
+
+/* styling all instances of a tag */
+h1 {
+  color: purple;
+}
+
+/* styling a class */
+.info-block {
+  padding: 10px;
+  margin: 10px;
+  color: grey;
+  border: 1px solid black;
+}
+
+/* styling an id */
+#my-tall-image-container {
+  width: 100%;
+  max-width: 1100px;
+  min-width: 500px;
+  margin: 20px;
+  padding: 20px;
+}
+
+/* styling all instances of a tag that are nested in a div with given id */
+#my-tall-image-container img {
+  border: 1px solid red; /* (this is a comment in CSS) this is how you target something within another div in raw CSS */
+}

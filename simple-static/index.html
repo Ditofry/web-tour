@@ -2,38 +2,17 @@
 <html>
   <head>
     <title>My site's title (look at the tab in your browser)</title>
-    <style>
-      .info-block {
-        padding: 10px;
-        margin: 10px;
-        color: grey;
-        border: 1px solid black;
-      }
 
-      #my-tall-image-container {
-        width: 100%;
-        max-width: 1100px;
-        min-width: 500px;
-        margin: 20px;
-        padding: 20px;
-      }
-
-      #my-tall-image-container img {
-        border: 1px solid red; /* (this is a comment in CSS) this is how you target something within another div in raw CSS */
-      }
-    </style>
+    <link href="css/any-name-you-want.css" rel="stylesheet" type="text/css" />
   </head>
   
   <body>
-    <h1 style="color:purple;">This header is styled in-line</h1>
+    <h1>This header is styled in-line</h1>
     <div class="info-block">
-      <p>The HTML now has a bunch of classes and id's.  Classes and id's are 
-      just strings, and pretty much any old string will do.  Classes can exist
-      in multiple places, ids exist in only one place.</p>
+      <p>Same exact HTML, but now the CSS and Javascript has been broken
+      out into their own respective files.  Seperatin' dem concerns.</p>
       
-      <p>Classes/IDs don't mean anything unless they're targeted by CSS, (makes things pretty),
-      or Javascript (makes the page do stuff).  We don't have Javascript or CSS
-      yet.  That's why this page looks like poo.</p>
+      <p>Still looks like poo.</p>
     </div>
 
     <div id="my-tall-image-container"> 
@@ -64,15 +43,7 @@
     <div id="the-lone-gif">
       <img src="./images/animated_gif.gif" />
     </div>
-
-    <script>
-      function clickyFunction() {
-        alert('ya clicked the gif!');
-      }
-
-      var loneGif = document.getElementById("the-lone-gif");
-      console.log("this message is only shown in the browser's console. hit cmd+option+j to view it. Btw, our var looks like this ->", loneGif);
-      loneGif.onclick = clickyFunction;
-    </script>
+    
+    <script type="text/javascript" src="js/any-name-you-like.js"></script>
   </body>
 </html>
