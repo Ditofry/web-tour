@@ -46,7 +46,8 @@ img {
   max-width: 1100px;
   min-width: 500px;
   margin: 20px auto;
-  padding: 20px;  
+  padding: 20px;
+  overflow: hidden;  
 }
 
 .an-image {
@@ -55,3 +56,14 @@ img {
   margin: 0 2%;
 }
 /* styling all instances of a tag that are nested in a div with given id */
+
+
+@media (max-width: 600px) {
+  #my-tall-image-container {
+    display: none;
+  }
+  
+  .an-image {
+    float: none;
+  }
+}
